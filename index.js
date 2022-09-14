@@ -72,11 +72,10 @@ const questions = [
 // TODO: Create a function to write README file
 // function generates readme based on user-input answers
 // write readme, console.log success/err
-function writeToFile(fileName, data) {
-    const filename = `${README.md}`;
+function writeToFile(data) {
 
-    // fs.writeToFile(path, data, callback =>)
-    fs.writeFile(filename, (data), (err) =>
+    // fs.writeToFile(path, data, callback =>), console log error if not generated
+    fs.writeFile('README.md', data, err =>
     err ? console.log(err) : console.log('README successfully generated!'));
 }
 
@@ -90,4 +89,13 @@ function init() {
 
 
 // Function call to initialize app
-init();
+init()
+.then(data => {
+    return generateREADME(data);
+})
+.then(data => {
+    return writeToFile(data);
+})
+.catch(err => {
+    console.log(err);
+});

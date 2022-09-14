@@ -26,9 +26,11 @@ ${data.usage}
 
 ## License
 
-%  render license function
+${renderLicenseSection(data.license)}
 
 ## Contributing
+
+Contributors: ${data.contributors}
 
 ${data.contributing}
 
@@ -38,4 +40,6 @@ ${data.tests}
 
 ## Questions
 
-${data.ques}
+Email: ${data.quesEmail}
+
+[Visit my Github Profile](https://github.com/${data.quesGithub})

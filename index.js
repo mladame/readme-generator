@@ -16,42 +16,56 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "What is the description for this project?"
+        message: "Enter the description for this project"
     },
     {
         type: "input",
         name: "installation",
-        message: "What is the title for this README.md?"
+        message: "Enter the installation process, if any"
     },
     {
         type: "input",
         name: "usage",
-        message: "What is the title for this README.md?"
+        message: "Enter the usage information for this project"
+    },
+    {
+        type: "input",
+        name: "contributors",
+        message: "Enter the names of the individuals who contributed to this project"
     },
     {
         type: "input",
         name: "contributing",
-        message: "What is the title for this README.md?"
+        message: "Enter contribution instructions for other users to follow"
     },
     {
         type: "input",
         name: "tests",
-        message: "What is the title for this README.md?"
+        message: "Enter instructions to use, and purpose of tests for this project"
     },
     // need github username -> link and email -> contact
     {
         type: "input",
-        name: "questions",
-        message: "What is the title for this README.md?"
+        name: "quesEmail",
+        message: "Please enter email for users to ask you questions for this project"
+    },
+    {
+        type: "input",
+        name: "quesGithub",
+        message: "Please enter your github username to link your Github profile"
     },
     // make into list optoin
     {
-        type: "input",
+        type: "list",
         name: "license",
-        message: "What is the title for this README.md?"
+        choices: [
+            "Apache License 2.0",
+            "MIT",
+            "ISC",
+            "GNU GPLv3"
+        ]
     }
 
-    // add sections: description, installation, usage, license, contributing, tests, questions(enter github username), email,
 ];
 
 // TODO: Create a function to write README file

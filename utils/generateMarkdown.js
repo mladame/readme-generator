@@ -33,8 +33,6 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-// create markdown practice - insert blank readme layout
-// under license section, call: renderLicenseSection
 function generateMarkdown(data) {
   return `# ${data.title}
 

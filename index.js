@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require("util");
 const generateREADME = require("./utils/generateMarkdown");
-// const fileName = util.promisify(fs.writeToFile)
+const fileName = util.promisify(fs.writeToFile)
 
 // TODO: Create an array of questions for user input
 // change to function use: questions = () => return inquirer .prompt([questions array])

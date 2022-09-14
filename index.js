@@ -71,13 +71,20 @@ const questions = [
 // TODO: Create a function to write README file
 // function generates readme based on user-input answers
 // write readme, console.log success/err
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    // const filename = `${data.title.toLowerCase().split(' ').join('')}.json`;
+
+    // fs.writeToFile(fileName, )
+}
 
 // TODO: Create a function to initialize app
 //  use: generateREADME(answers)
 // .then 
 // console.log err
-function init() {}
+function init() {
+    return inquirer.createPromptModule(questions);
+}
+
 
 // Function call to initialize app
 init();

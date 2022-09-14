@@ -1,4 +1,4 @@
-
+${renderLicenseBadge(data.license)}
 
 ## Table of Contents
 
